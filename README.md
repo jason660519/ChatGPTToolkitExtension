@@ -1,3 +1,5 @@
+[![Node.js Release and Data Workflow](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml/badge.svg)](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml)
+
 # ChatGPT 萬能工具箱
 
 提升 ChatGPT 網站的使用體驗，提供一些好用功能。像是自動從 URL 填入提示、在回應的地方出現自動提示按鈕、以及更多好用功能陸續推出。
@@ -84,5 +86,3 @@ More useful features will be launched in the future, and everyone is welcome to 
    URL with %s in place of query: https://chat.openai.com/chat/#autoSubmit=1&prompt=%s
    ```
    Just type `g` in the URL bar and press the Tab key, and ChatGPT will automatically open and fill in the prompt text.
-
-   [![Node.js Release and Data Workflow](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml/badge.svg)](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml)

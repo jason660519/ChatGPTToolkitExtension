@@ -20,27 +20,26 @@ ChatGPT 萬能工具箱提供 ChatGPT 網站一些好用的額外功能，可以
 
 1. 在網址列加上 `#autoSubmit=1&prompt=你的提示文字`，例如：
 
-    開啟 ChatGPT 網站並填入「你好」且**不會自動送出** (`autoSubmit=0`)
+   開啟 ChatGPT 網站並填入「你好」且**不會自動送出** (`autoSubmit=0`)
 
-    https://chat.openai.com/chat/#autoSubmit=0&prompt=你好
+   https://chat.openai.com/chat/#autoSubmit=0&prompt=你好
 
-    開啟 ChatGPT 網站並填入「你好」且**會自動送出** (`autoSubmit=1`)
+   開啟 ChatGPT 網站並填入「你好」且**會自動送出** (`autoSubmit=1`)
 
-    https://chat.openai.com/chat/#autoSubmit=1&prompt=你好
-
+   https://chat.openai.com/chat/#autoSubmit=1&prompt=你好
 2. 設定為 Chrome / Edge 內建搜尋引擎，例如：
 
-    設定方式請參考 [設定預設搜尋引擎和網站搜尋快捷字詞](https://support.google.com/chrome/answer/95426?hl=zh-Hant) 文件！
+   設定方式請參考 [設定預設搜尋引擎和網站搜尋快捷字詞](https://support.google.com/chrome/answer/95426?hl=zh-Hant) 文件！
 
-    設定範例：
+   設定範例：
 
-    ```txt
-    搜尋引擎: ChatGPT
-    快捷字詞: g
-    以 %s 取代查詢的網址: https://chat.openai.com/chat/#autoSubmit=1&prompt=%s
-    ```
+   ```txt
+   搜尋引擎: ChatGPT
+   快捷字詞: g
+   以 %s 取代查詢的網址: https://chat.openai.com/chat/#autoSubmit=1&prompt=%s
+   ```
 
-    只要在網址列輸入 `g` 再按 Tab 鍵，就會自動開啟 ChatGPT 並自動填入提示文字。
+   只要在網址列輸入 `g` 再按 Tab 鍵，就會自動開啟 ChatGPT 並自動填入提示文字。
 
 ---
 
@@ -66,24 +65,24 @@ More useful features will be launched in the future, and everyone is welcome to 
 
 1. Add `#autoSubmit=1&prompt=your_prompt_text` to the URL bar, for example:
 
-    Open the ChatGPT website and fill in "hello" **without automatically submitting** (`autoSubmit=0`):
+   Open the ChatGPT website and fill in "hello" **without automatically submitting** (`autoSubmit=0`):
 
-    https://chat.openai.com/chat/#autoSubmit=0&prompt=hello
+   https://chat.openai.com/chat/#autoSubmit=0&prompt=hello
 
-    Open the ChatGPT website and fill in "hello" **with automatic submission** (`autoSubmit=1`):
+   Open the ChatGPT website and fill in "hello" **with automatic submission** (`autoSubmit=1`):
 
-    https://chat.openai.com/chat/#autoSubmit=1&prompt=hello
-
+   https://chat.openai.com/chat/#autoSubmit=1&prompt=hello
 2. Set it as the default search engine in Chrome / Edge, for example:
 
-    Refer to the [Set your default search engine & site search shortcuts](https://support.google.com/chrome/answer/95426?hl=en) document for instructions!
+   Refer to the [Set your default search engine & site search shortcuts](https://support.google.com/chrome/answer/95426?hl=en) document for instructions!
 
-    Example settings:
+   Example settings:
 
-    ```txt
-    Search engine: ChatGPT
-    Shortcut: g
-    URL with %s in place of query: https://chat.openai.com/chat/#autoSubmit=1&prompt=%s
-    ```
+   ```txt
+   Search engine: ChatGPT
+   Shortcut: g
+   URL with %s in place of query: https://chat.openai.com/chat/#autoSubmit=1&prompt=%s
+   ```
+   Just type `g` in the URL bar and press the Tab key, and ChatGPT will automatically open and fill in the prompt text.
 
-    Just type `g` in the URL bar and press the Tab key, and ChatGPT will automatically open and fill in the prompt text.
+   [![Node.js Release and Data Workflow](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml/badge.svg)](https://github.com/jason660519/ChatGPTToolkitExtension/actions/workflows/main.yml)

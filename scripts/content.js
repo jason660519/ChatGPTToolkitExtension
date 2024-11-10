@@ -411,58 +411,52 @@
                 defaultManualSubmitText.push({ title: "英語に翻訳", prompt: "Please translate the above response into English." });
             }
             else {
-      // exemplify
-      defaultManualSubmitText.push({
-        text: "More Examples",
-        value: "Could you please provide me with more examples?",
-      });
-      // expand
-      defaultManualSubmitText.push({
-        text: "More Details",
-        value: "Could you please provide me with more details?",
-      });
-      // translate to EN
-      defaultManualSubmitText.push({
-        text: "Translate to En",
-        value: "Please translate the above response into English.",
-      });
-      // translate to TC
-      defaultManualSubmitText.push({
-        text: "Translate to TW",
-        value: "請將上述回應內容翻譯成臺灣常用的正體中文",
-      });
-      defaultManualSubmitText.push({
-        text: "Explain Code in EN",
-        value:
-          "You are now a senior programmer. " +
-          "Please annotate the above code line by line using appropriate comment characters and explain it to an 18-year-old university student " +
-          "who has just started studying computer science. The goal is to help them understand the functionality and principles of this code.",
-      });
-      // Summaizer
-      defaultManualSubmitText.push({
-        text: "Summaize in EN",
-        value:
-            "Summarize the above content into 30 key points",
-      });
-      // Coding Explanation in TC
-      defaultManualSubmitText.push({
-        text: "Explain Code in CH",
-        value:
-          "#zh-tw 你現在是資深程式設計師，請使用適當的註釋字符把上述代碼逐行用臺灣常用的正體中文註釋並講講解給18歲剛開始念電腦科學系的大學生，讓他們理解這些代碼的功能與原理。",
-      });
-      // Table Creation
-      defaultManualSubmitText.push({
-        text: "Table Creation",
-        value:
-          "#zh-tw 你現在表格整理大師，請把上面的專業詞彙用表格方式呈現，第一欄位:名稱(URL或wiki的超連結)，第二欄位:英文解釋(不超過30字),第三欄位:臺灣常用的正體中文解釋(不超過30字)",
-      });
-
-      // Repo Table Creation
-      defaultManualSubmitText.push({
-        text: "Github Repo Table Creation",
-        value:
-          "#zh-tw 你現在Github分析大師，請把上面的Github Repo依名稱、主要功能、貢獻者人數、license、開發使用的語言、使用者人數, 以表格說明方式呈現",
-      });
+                // exemplify
+                defaultManualSubmitText.push({
+                    title: "More Examples",
+                    prompt: "Could you please provide me with more examples?",
+                });
+                // expand
+                defaultManualSubmitText.push({
+                    title: "More Details",
+                    prompt: "Could you please provide me with more details?",
+                });
+                // translate to EN
+                defaultManualSubmitText.push({
+                    title: "Translate to En",
+                    prompt: "Please translate the above response into English.",
+                });
+                // translate to TC
+                defaultManualSubmitText.push({
+                    title: "Translate to TW",
+                    prompt: "請將上述回應內容翻譯成臺灣常用的正體中文",
+                });
+                defaultManualSubmitText.push({
+                    title: "Explain Code in EN",
+                    prompt: "You are now a senior programmer. " +
+                        "Please annotate the above code line by line using appropriate comment characters and explain it to an 18-year-old university student " +
+                        "who has just started studying computer science. The goal is to help them understand the functionality and principles of this code.",
+                });
+                // Summarizer
+                defaultManualSubmitText.push({
+                    title: "Summarize in EN",
+                    prompt: "Summarize the above content into 30 key points",
+                });
+                // Coding Explanation in TC
+                defaultManualSubmitText.push({
+                    title: "Explain Code in CH",
+                    prompt: "#zh-tw 你現在是資深程式設計師，請使用適當的註釋字符把上述代碼逐行用臺灣常用的正體中文註釋並講講解給18歲剛開始念電腦科學系的大學生，讓他們理解這些代碼的功能與原理。",
+                });
+                // Table Creation
+                defaultManualSubmitText.push({
+                    title: "Table Creation",
+                    prompt: "#zh-tw 你現在表格整理大師，請把上面的專業詞彙用表格方式呈現，第一欄位:名稱(URL或wiki的超連結)，第二欄位:英文解釋(不超過30字),第三欄位:臺灣常用的正體中文解釋(不超過30字)",
+                });
+                // Repo Table Creation
+                defaultManualSubmitText.push({
+                    title: "Github Repo Table Creation",
+                    prompt: "#zh-tw 你現在Github分析大師，請把上面的Github Repo依名稱、主要功能、貢獻者人數、license、開發使用的語言、使用者人數, 以表格說明方式呈現",
+                });
             }
         }
 

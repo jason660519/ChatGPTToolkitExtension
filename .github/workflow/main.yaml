@@ -1,0 +1,58 @@
+name: Node.js Release and Data Workflow
+
+on: [push]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: |
+          npm install
+          npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+
+      - name: Generate data
+        run: echo "Release ${{ github.run_number }}" > data.txt
+
+      - name: Upload data as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: job1-data
+          path: data.txt
+
+  process-data:
+    needs: build-and-release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download data from previous job
+        uses: actions/download-artifact@v3
+        with:
+          name: job1-data
+          path: data/
+
+      - name: Process data
+        run: cat data/data.txt
